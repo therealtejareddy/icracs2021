@@ -1,0 +1,74 @@
+{% extends 'icracs/base.html' %}
+{% load static %}
+{% block content %}
+    <section class="hero">
+        <div class="container">
+            <h1 data-aos="fade-down" data-aos-duration='1800'>
+                INTERNATIONAL CONFERENCE ON
+                RECENT ADVANCES IN COMPUTER SCIENCE
+            </h1>
+            <h2 data-aos="fade-up" data-aos-duration='1800'>DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING</h2>
+            <h3 id="confdate" data-aos="fade-up" data-aos-duration='1500'>Through Virtual mode on June 18<sup>th</sup>, 2021</h3>
+        </div>
+    </section>
+    <section id="section1">
+        <div class="container">
+            <div class="div">
+                <h3 data-aos="fade-right" data-aos-duration='1000'>About Conference</h3>
+                <div>
+                    <p>
+                        ICRACS'21 is a forum for presenting excellent results and new challenges focusing in the field of Computer Science and Engineering.
+                         It brings together experts from Industry, Governments and Academicians experienced in Engineering design and Research especially in 
+                         the area of Computer Science and Engineering.
+                    </p>
+                    <br>
+                    <p>
+                        New disruptive technologies bring up every day making Computer Science the most happening,
+                         dynamic and a challenging discipline. This rapid change moments all stake holders in computer science 
+                         to update on daily basis to remain relevant. ICRACS'20 offer such platform for effective interaction, debate and sharing of knowledge
+                          and experience.
+                    </p><br>
+                    <p>
+                        The ICRACS'21 being organized by Department of Computer Science and Engineering,
+                         Saveetha Engineering College offers a technical program including keynote speakers, regular presentations, workshops,
+                          academic visiting for tour. Our objective is to provide a platform which will promote and encourage researchers, scholars,
+                           academicians to carry on and accomplish their research work.
+                            We look forward for your contribution and participation to make this a successful event.
+                    </p>
+                </div>
+            </div>
+            <div class="div">
+                <h3 data-aos="fade-right" data-aos-duration='1000'>Important Dates</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Deadline for Paper Submisssion</td>
+                            <td class="date">:&nbsp;03.05.2021</td>
+                        </tr>
+                        <tr>
+                            <td>Notification of Acceptance</td>
+                            <td class="date">:&nbsp;18.05.2021</td>
+                        </tr>
+                        <tr>
+                            <td>Camera Ready Paper</td>
+                            <td class="date">:&nbsp;03.06.2021</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <div class="sponsers">
+        <div class="container">
+            <h2 id="spons">Co-Sponsers</h2>
+            <div class="imgs">
+                <div class="img" data-aos="zoom-in" data-aos-duration='2000'>
+                    <img src="{% static 'icracs/img/codechefsec.jpeg' %}" alt="">
+                </div>
+                <div class="img" data-aos="zoom-out" data-aos-duration='2000'>
+                    <img src="{% static 'icracs/img/capgemini-logo.jpg' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

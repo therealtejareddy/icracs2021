@@ -1,0 +1,82 @@
+{% extends 'icracs/base.html' %}
+{% load static %}
+{% block content %}
+<section class="commitee">
+    <div class="container">
+        <h2>Organizing Committee</h2>
+        <div class="ctns">
+            <h3>Organizing Committee team</h3>
+            <h4>Chief Patron:</h4>
+            <div class="ctn">
+
+                <p><b>Dr.N. M. Veeraiyan</b></p>
+                <p>Founder President&Chancellor,Saveetha Institute of Medical and Technical Sciences</p>
+            </div>
+            <h4>Patrons:</h4>
+            <div class="ctn">
+                <p><b>Dr. S. Rajesh</b>,Director, Saveetha Engineering College</p>
+            </div>
+            <div class="ctn">
+                <p><b>Dr. V. Saveetha Rajesh</b>, Director, Saveetha Medical College</p>
+            </div>
+            <h4>Co-Patrons:</h4>
+            <div class="ctn">
+                <p><b>Dr. R. Ramesh</b>, Principal</p>
+            </div>
+            <div class="ctn">
+                <p><b>Dr. R. Senthil Kumar</b>, Vice-Principal</p>
+            </div>
+            <div class="ctn">
+                <p><b>Mr. C. Obed Otto</b>, Associate Dean</p>
+            </div>
+        </div>
+
+        <div class="ctns">
+            <h3>Conference Chairs</h3>
+            <div class="ctn">
+                <p><b>Dr. G. Nagappan </b>, Professor &amp; Head/CSE</p>
+            </div>
+        </div>
+        <div class="ctns">
+            <h3>Organizing Secretary</h3>
+            <div class="ctn">
+                <p><b>Dr. S. Amutha </b>,Associate Professor/CSE</p>
+            </div>
+        </div>
+        <div class="ctns">
+            <h3>Conference Coordinators</h3>
+            {% for member in conference_coordinaters %}
+            <div class="ctn">
+                <p><b>{{ member.member }}</b>, {{ member.profession }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        <!-- <div class="ctns">
+            <h3>Technical Commitee</h3>
+            {% for member in technical_commitee %}
+                <div class="ctn">
+                    <b><p>{{ member.name }}</p></b>
+                    <p>{{ member.profession }}</p>
+                </div>
+            {% endfor %}
+        </div> -->
+        <div class="ctns">
+            <h3>
+                Review Commitee
+            </h3>
+            {% for member in review_commitee_int %}
+                <div class="ctn">
+                    <b><p>{{ member.name }}</p></b>
+                    <p>{{ member.profession }}</p>
+                </div>
+            {% endfor %}
+            {% for member in review_commitee_ind %}
+            <div class="ctn">
+                <b><p>{{ member.name }}</p></b>
+                <p>{{ member.profession }}</p>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

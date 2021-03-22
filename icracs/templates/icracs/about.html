@@ -1,0 +1,66 @@
+{% extends 'icracs/base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+<section class="about">
+    <div class="container">
+        <h2>About the Institution</h2>
+        <div class="container_flued">
+            <div class="img">
+                <img src="{% static 'icracs/img/secfull.jpg' %}" alt="">   
+            </div>
+            <div class="content">
+                <p>
+                    <b>Saveetha Engineering College</b> is located on the Chennai-Bangalore National Highway on a 25.58 Acres land. This college was founded in 2001 by Saveetha Medical & Educational Trust. The College has a built up area of 89773 sq.meter. The college has an intake of 1260 students under UG Courses in Agricultural, Bio-Medical Engineering, Civil, CSE, ECE, EEE, EIE, IT, Mechanical, Medical Electronics, Chemical Engineering. The college has an intake of 144 students in PG courses  - Applied Electronics, Communication Networks, VLSI Design, Embedded System Technologies, CAD-CAM, CSE and Software Engineering. The intake in MBA is 120 students. The total strength is 4560 students. Total strength of faculty members is 371 with 58 Professors, 64 Associate Professors and 249 Assistant Professors. Out of the 371 faculty members, 92 are doctorates.
+                </p>
+                <br>
+                <p>The College is autonomous under Anna University, accredited by NAAC with 'A' grade (CGPA 3.19) for the period from 25.06.2015 to 24.06.2020.
+                      The college has got NBA accreditation for 3 years for UG Courses IT, CSE, EEE, ECE, Mechanical engineering in the year 2015 and renewed  in the year 2018 for the next three Years till 2021. The college has been certified ISO 9001:2000 by BVQI in 2006, upgraded to ISO 9001:2008 by BVQI in 2010. The college has been ranked 91st by the National Institute Ranking Framework (NIRF) ranking 2017 and 101-150 in 2018 ranking under the Engineering category. The college has the approval of AICTE and is affiliated to Anna University.  The College is also included in the list of Colleges under Section 2(f) and 12-B of the UGC Act, 1956.
+                        </p>
+                        <br>
+                    <p>The college motto, 'BE THE BEST', carries a message to the students that they should aim for the best in education, culture and achievement. Nothing less than the 'Best' is acceptable in Saveetha Engineering College.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>About the Department</h2>
+        <div class="container_flued">
+            <div class="img">
+                  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="{% static 'icracs/img/cse1.jpg' %}" alt=""></div>
+      <div class="swiper-slide"><img src="{% static 'icracs/img/cse2.jpg' %}" alt=""></div>
+      <div class="swiper-slide"><img src="{% static 'icracs/img/cse3.jpg' %}" alt=""></div>
+      <div class="swiper-slide"><img src="{% static 'icracs/img/cse4.jpg' %}" alt=""></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <!-- <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div> -->
+  </div>   
+            </div>
+            <div class="content">
+                <p>
+                    The Department of Computer science and Engineering was established in the year 2001. Our Department offers B.E Computer science and Engineering, M.E Computer science and Engineering programs. The department has a team of sincere, dedicated, competent and experienced faculty with commitment to serve the college in achieving its goals.
+                     Every year we are producing very good results.
+                </p><br>
+                <h4>Vision</h4>
+                <p>To uniquely position the department and to establish synergistic relationship across the entire spectrum of disciplines involved with computing by our faculty contributing to Computer Science and devoting themselves to take the maximal advantage of modern Computer Science to solve a wide range of complex,
+                     scientific, technological and social problems.
+                </p><br>
+                <h4>Mission</h4>
+                <p>
+                    To pursue our vision by striving for excellence in creating, applying, and imparting knowledge in Computer Science and Engineering.
+                    To pursue comprehensive educational system, research in collaboration with industry and government and to disseminate knowledge through scholarly publications.
+                    To provide service through professional societies to the community, the state, and the nation.
+
+                </p><br>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
